@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SkullClick</title>
+  <link rel="icon" href="../icons/icon-32.png">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <header class="top">
+    <img src="../icons/icon.svg" width="40" height="40" alt="">
+    <div>
+      <h1>SkullClick</h1>
+      <span class="muted" id="version"></span>
+    </div>
+    <a class="support-link" id="support-link" target="_blank" rel="noopener" data-i18n="supportLink">Support</a>
+  </header>
+
+  <main>
+    <section class="card welcome" id="welcome" hidden>
+      <h2 data-i18n="welcomeTitle">Thanks for installing SkullClick!</h2>
+      <p data-i18n="welcomeText">Pin the skull icon to your toolbar, open any page and click the icon (or press the shortcut below). Then click the element you want gone.</p>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="howToTitle">How to use</h2>
+      <dl class="keys">
+        <dt><kbd id="shortcut-toggle">Alt+Shift+K</kbd> <span data-i18n="orIcon">or the toolbar icon</span></dt>
+        <dd data-i18n="keyToggle">Start / stop picking</dd>
+        <dt><kbd data-i18n="keyClickLabel">Click</kbd></dt>
+        <dd data-i18n="keyClick">Remove the highlighted element</dd>
+        <dt><kbd>Shift</kbd> + <kbd data-i18n="keyClickLabel">Click</kbd></dt>
+        <dd data-i18n="keyShiftClick">Remove and keep picking</dd>
+        <dt><kbd>↑</kbd> <kbd>↓</kbd></dt>
+        <dd data-i18n="keyArrows">Select the parent / back to the child element</dd>
+        <dt><kbd>Enter</kbd></dt>
+        <dd data-i18n="keyEnter">Remove the selected element</dd>
+        <dt><kbd>Ctrl</kbd> + <kbd>Z</kbd></dt>
+        <dd data-i18n="keyUndo">Undo the last removal</dd>
+        <dt><kbd>Esc</kbd></dt>
+        <dd data-i18n="keyEsc">Stop picking</dd>
+      </dl>
+      <p class="muted" data-i18n="reloadNote">Removed elements come back when the page reloads — unless Grudge mode is on.</p>
+      <button type="button" class="secondary" id="shortcuts-button" data-i18n="changeShortcut">Change keyboard shortcuts</button>
+      <p class="muted" id="shortcuts-help" hidden data-i18n="shortcutsFirefox">Firefox: open about:addons, click the gear icon and choose “Manage Extension Shortcuts”.</p>
+    </section>
+
+    <section class="card">
+      <div class="row">
+        <div>
+          <h2 data-i18n="grudgeTitle">Grudge mode: remember removed elements</h2>
+          <p data-i18n="grudgeText">SkullClick remembers every element you remove and hides it automatically on your next visits to the same page.</p>
+          <p class="muted" data-i18n="grudgePrivacy">Needs access to all websites so it can run on page load. The list is stored only in this browser and is never sent anywhere.</p>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="grudge-toggle">
+          <span class="slider" aria-hidden="true"></span>
+          <span class="sr-only" data-i18n="grudgeTitle">Grudge mode</span>
+        </label>
+      </div>
+      <div class="warning" id="permission-warning" hidden>
+        <span data-i18n="permissionMissing">Grudge mode is on, but SkullClick has no access to websites, so it can't hide anything.</span>
+        <button type="button" id="grant-button" data-i18n="grantAccess">Grant access</button>
+      </div>
+    </section>
+
+    <section class="card" id="hitlist-card">
+      <div class="row">
+        <h2><span data-i18n="hitListTitle">Hit List</span> <span class="count" id="rule-count">0</span></h2>
+        <div class="actions">
+          <button type="button" class="secondary" id="export-button" data-i18n="export">Export</button>
+          <button type="button" class="secondary" id="import-button" data-i18n="import">Import</button>
+          <input type="file" id="import-file" accept="application/json,.json" hidden>
+        </div>
+      </div>
+      <input type="search" id="search" data-i18n-placeholder="searchPlaceholder" placeholder="Filter by site or selector…">
+      <div id="hitlist"></div>
+      <p class="muted empty" id="hitlist-empty" data-i18n="hitListEmpty">Nothing here yet. Turn on Grudge mode and remove something.</p>
+      <div class="row end">
+        <button type="button" class="danger" id="clear-button" data-i18n="deleteAll">Delete all</button>
+      </div>
+      <p class="status" id="status" role="status"></p>
+    </section>
+  </main>
+
+  <footer>
+    <span data-i18n="basedOn">Based on ekill by René Hansen.</span>
+    <a id="repo-link" target="_blank" rel="noopener">GitHub</a> ·
+    <a id="support-footer-link" target="_blank" rel="noopener" data-i18n="supportFooter">Support the project</a>
+  </footer>
+
+  <script src="../lib/rules.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

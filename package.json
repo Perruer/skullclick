@@ -1,0 +1,28 @@
+{
+  "name": "skullclick",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Click to remove annoying elements from any web page. Fork of ekill.",
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "icons": "node scripts/icons.mjs",
+    "lint": "node scripts/build.mjs && web-ext lint --source-dir dist/firefox",
+    "test": "node --test test/unit/",
+    "test:e2e": "node scripts/build.mjs --e2e && node test/e2e/run.mjs",
+    "start:firefox": "node scripts/build.mjs && web-ext run --source-dir dist/firefox",
+    "start:chrome": "node scripts/build.mjs && web-ext run --source-dir dist/chrome -t chromium",
+    "package": "node scripts/build.mjs && web-ext build -s dist/chrome -a dist --filename skullclick-chrome-{version}.zip -o && web-ext build -s dist/firefox -a dist --filename skullclick-firefox-{version}.zip -o",
+    "test:e2e:edge": "node scripts/build.mjs --e2e && node test/e2e/run.mjs edge"
+  },
+  "devDependencies": {
+    "jsdom": "^29.1.1",
+    "puppeteer": "^24.43.1",
+    "web-ext": "^10.7.0"
+  },
+  "homepage": "https://github.com/GITHUB_USER/skullclick",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GITHUB_USER/skullclick.git"
+  }
+}

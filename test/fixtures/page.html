@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SkullClick test page</title>
+  <style>
+    body { font: 16px sans-serif; margin: 0; padding: 20px; min-height: 2000px; }
+    .toaster { position: fixed; right: 20px; bottom: 20px; width: 260px; height: 120px; background: #ffd54f; }
+    #list p { height: 30px; margin: 4px 0; background: #e0e0e0; }
+    #nested { padding: 20px; background: #bbdefb; width: 300px; }
+    #nested span { display: inline-block; padding: 10px; background: #90caf9; }
+    iframe { width: 300px; height: 120px; border: 2px solid #999; display: block; margin-top: 10px; }
+    .lower { margin-top: 20px; width: 200px; height: 40px; background: #c8e6c9; }
+  </style>
+</head>
+<body>
+  <!-- ekill #34: class with "@" -->
+  <div class="toaster u-width-100p u-hidden@desktop-max"></div>
+
+  <!-- ekill #22: nth-of-type stability -->
+  <div id="list"><div>header</div><p data-p="first">first</p><p data-p="second">second</p></div>
+
+  <div id="nested"><span id="inner">inner</span></div>
+
+  <iframe id="frame" src="frame.html"></iframe>
+
+  <div class="lower" id="lower">lower</div>
+
+  <script>
+    // Hostile page, like notion.so (ekill #35): swallows pointer events on
+    // document in the capture phase.
+    window.pageClicks = 0;
+    for (const type of ["click", "mousedown", "mouseup", "mousemove", "mouseover"]) {
+      document.addEventListener(type, e => {
+        if (type === "click") window.pageClicks++;
+        e.stopPropagation();
+        e.preventDefault();
+      }, true);
+    }
+  </script>
+</body>
+</html>

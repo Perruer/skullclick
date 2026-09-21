@@ -1,0 +1,167 @@
+{
+  "extName": {
+    "message": "SkullClick"
+  },
+  "extDescription": {
+    "message": "Убирайте рекламу, всплывающие окна, баннеры и любые мешающие элементы страницы одним кликом. Отмена, выбор родителя, запоминание."
+  },
+  "actionTitle": {
+    "message": "SkullClick: удалить элемент"
+  },
+  "cmdUndo": {
+    "message": "Отменить последнее удаление на странице"
+  },
+  "pickerHint": {
+    "message": "Клик: удалить · Shift+клик: удалить ещё · ↑/↓: родитель/потомок · Ctrl+Z: отмена · Esc: выход"
+  },
+  "undo": {
+    "message": "Отменить"
+  },
+  "toastRemoved": {
+    "message": "Элемент удалён"
+  },
+  "toastRemovedRemembered": {
+    "message": "Элемент удалён и запомнен"
+  },
+  "toastRestored": {
+    "message": "Элемент возвращён"
+  },
+  "toastNothingToUndo": {
+    "message": "Нечего отменять"
+  },
+  "supportLink": {
+    "message": "♥ Поддержать"
+  },
+  "welcomeTitle": {
+    "message": "Спасибо за установку SkullClick!"
+  },
+  "welcomeText": {
+    "message": "Закрепите значок с черепом на панели, откройте любую страницу и нажмите на значок (или сочетание клавиш ниже). Затем кликните по элементу, который хотите убрать."
+  },
+  "howToTitle": {
+    "message": "Как пользоваться"
+  },
+  "orIcon": {
+    "message": "или значок на панели"
+  },
+  "keyToggle": {
+    "message": "Включить / выключить выбор"
+  },
+  "keyClickLabel": {
+    "message": "Клик"
+  },
+  "keyClick": {
+    "message": "Удалить подсвеченный элемент"
+  },
+  "keyShiftClick": {
+    "message": "Удалить и продолжить выбор"
+  },
+  "keyArrows": {
+    "message": "Выбрать родителя / вернуться к потомку"
+  },
+  "keyEnter": {
+    "message": "Удалить выбранный элемент"
+  },
+  "keyUndo": {
+    "message": "Отменить последнее удаление"
+  },
+  "keyEsc": {
+    "message": "Выйти из режима выбора"
+  },
+  "reloadNote": {
+    "message": "После перезагрузки страницы удалённые элементы возвращаются — если не включён режим «Злопамятность»."
+  },
+  "changeShortcut": {
+    "message": "Изменить сочетания клавиш"
+  },
+  "shortcutsFirefox": {
+    "message": "Firefox: откройте about:addons, нажмите на шестерёнку и выберите «Управление горячими клавишами расширений»."
+  },
+  "shortcutNotSet": {
+    "message": "не задано"
+  },
+  "grudgeTitle": {
+    "message": "Злопамятность: запоминать удалённые элементы"
+  },
+  "grudgeText": {
+    "message": "SkullClick запоминает каждый удалённый элемент и автоматически скрывает его при следующих посещениях страницы."
+  },
+  "grudgePrivacy": {
+    "message": "Нужен доступ ко всем сайтам, чтобы срабатывать при загрузке страницы. Список хранится только в этом браузере и никуда не отправляется."
+  },
+  "permissionMissing": {
+    "message": "Злопамятность включена, но у SkullClick нет доступа к сайтам, поэтому он ничего не скрывает."
+  },
+  "grantAccess": {
+    "message": "Разрешить доступ"
+  },
+  "permissionDenied": {
+    "message": "Доступ не выдан, злопамятность остаётся выключенной."
+  },
+  "hitListTitle": {
+    "message": "Чёрный список"
+  },
+  "export": {
+    "message": "Экспорт"
+  },
+  "import": {
+    "message": "Импорт"
+  },
+  "searchPlaceholder": {
+    "message": "Фильтр по сайту или селектору…"
+  },
+  "hitListEmpty": {
+    "message": "Пока пусто. Включите злопамятность и удалите что-нибудь."
+  },
+  "deleteAll": {
+    "message": "Удалить всё"
+  },
+  "confirmDeleteAll": {
+    "message": "Удалить все запомненные элементы?"
+  },
+  "delete": {
+    "message": "Удалить"
+  },
+  "ruleDeleted": {
+    "message": "Правило удалено. Перезагрузите страницу, чтобы элемент вернулся."
+  },
+  "rulesCount": {
+    "message": "Правил: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "scopeTitle": {
+    "message": "Где скрывать этот элемент"
+  },
+  "scopePage": {
+    "message": "Только на $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "scopeSite": {
+    "message": "На всём сайте"
+  },
+  "importDone": {
+    "message": "Импортировано новых правил: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "importFailed": {
+    "message": "Этот файл не похож на список SkullClick."
+  },
+  "basedOn": {
+    "message": "Основано на ekill от René Hansen."
+  },
+  "supportFooter": {
+    "message": "Поддержать проект"
+  }
+}

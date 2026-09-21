@@ -1,0 +1,167 @@
+{
+  "extName": {
+    "message": "SkullClick"
+  },
+  "extDescription": {
+    "message": "Click to remove ads, pop-ups, banners and any other annoying element from a web page. Undo, parent selection, optional memory."
+  },
+  "actionTitle": {
+    "message": "SkullClick: remove an element"
+  },
+  "cmdUndo": {
+    "message": "Undo the last removal on the page"
+  },
+  "pickerHint": {
+    "message": "Click: remove · Shift+click: remove more · ↑/↓: parent/child · Ctrl+Z: undo · Esc: exit"
+  },
+  "undo": {
+    "message": "Undo"
+  },
+  "toastRemoved": {
+    "message": "Element removed"
+  },
+  "toastRemovedRemembered": {
+    "message": "Element removed and remembered"
+  },
+  "toastRestored": {
+    "message": "Element restored"
+  },
+  "toastNothingToUndo": {
+    "message": "Nothing to undo"
+  },
+  "supportLink": {
+    "message": "♥ Support"
+  },
+  "welcomeTitle": {
+    "message": "Thanks for installing SkullClick!"
+  },
+  "welcomeText": {
+    "message": "Pin the skull icon to your toolbar, open any page and click the icon (or press the shortcut below). Then click the element you want gone."
+  },
+  "howToTitle": {
+    "message": "How to use"
+  },
+  "orIcon": {
+    "message": "or the toolbar icon"
+  },
+  "keyToggle": {
+    "message": "Start / stop picking"
+  },
+  "keyClickLabel": {
+    "message": "Click"
+  },
+  "keyClick": {
+    "message": "Remove the highlighted element"
+  },
+  "keyShiftClick": {
+    "message": "Remove and keep picking"
+  },
+  "keyArrows": {
+    "message": "Select the parent / back to the child element"
+  },
+  "keyEnter": {
+    "message": "Remove the selected element"
+  },
+  "keyUndo": {
+    "message": "Undo the last removal"
+  },
+  "keyEsc": {
+    "message": "Stop picking"
+  },
+  "reloadNote": {
+    "message": "Removed elements come back when the page reloads — unless Grudge mode is on."
+  },
+  "changeShortcut": {
+    "message": "Change keyboard shortcuts"
+  },
+  "shortcutsFirefox": {
+    "message": "Firefox: open about:addons, click the gear icon and choose “Manage Extension Shortcuts”."
+  },
+  "shortcutNotSet": {
+    "message": "not set"
+  },
+  "grudgeTitle": {
+    "message": "Grudge mode: remember removed elements"
+  },
+  "grudgeText": {
+    "message": "SkullClick remembers every element you remove and hides it automatically on your next visits to the same page."
+  },
+  "grudgePrivacy": {
+    "message": "Needs access to all websites so it can run on page load. The list is stored only in this browser and is never sent anywhere."
+  },
+  "permissionMissing": {
+    "message": "Grudge mode is on, but SkullClick has no access to websites, so it can't hide anything."
+  },
+  "grantAccess": {
+    "message": "Grant access"
+  },
+  "permissionDenied": {
+    "message": "Access was not granted, Grudge mode stays off."
+  },
+  "hitListTitle": {
+    "message": "Hit List"
+  },
+  "export": {
+    "message": "Export"
+  },
+  "import": {
+    "message": "Import"
+  },
+  "searchPlaceholder": {
+    "message": "Filter by site or selector…"
+  },
+  "hitListEmpty": {
+    "message": "Nothing here yet. Turn on Grudge mode and remove something."
+  },
+  "deleteAll": {
+    "message": "Delete all"
+  },
+  "confirmDeleteAll": {
+    "message": "Delete all remembered elements?"
+  },
+  "delete": {
+    "message": "Delete"
+  },
+  "ruleDeleted": {
+    "message": "Rule deleted. Reload the page to see the element again."
+  },
+  "rulesCount": {
+    "message": "Rules: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "scopeTitle": {
+    "message": "Where to hide this element"
+  },
+  "scopePage": {
+    "message": "Only on $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "scopeSite": {
+    "message": "On the whole site"
+  },
+  "importDone": {
+    "message": "Imported: $COUNT$ new rules.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "importFailed": {
+    "message": "This file is not a SkullClick hit list."
+  },
+  "basedOn": {
+    "message": "Based on ekill by René Hansen."
+  },
+  "supportFooter": {
+    "message": "Support the project"
+  }
+}
