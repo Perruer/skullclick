@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Daily Example — Local park gets a new bench</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 17px/1.65 Georgia, "Times New Roman", serif; color: #222; background: #fff; }
+    header.site { border-bottom: 1px solid #ddd; padding: 14px 40px; display: flex; align-items: baseline; gap: 28px; font-family: system-ui, sans-serif; }
+    header.site .logo { font: 700 26px Georgia, serif; letter-spacing: -.5px; }
+    header.site nav { display: flex; gap: 18px; font-size: 14px; color: #555; }
+    .wrap { display: grid; grid-template-columns: 1fr 300px; gap: 40px; max-width: 1140px; margin: 0 auto; padding: 28px 40px; }
+    h1 { font-size: 38px; line-height: 1.15; margin: 0 0 10px; }
+    .meta { font: 14px system-ui, sans-serif; color: #777; margin-bottom: 18px; }
+    .hero { height: 220px; border-radius: 6px; background: linear-gradient(135deg, #a5d6a7, #4caf50 60%, #2e7d32); margin-bottom: 20px; }
+    aside .ad { height: 250px; border: 1px solid #e0e0e0; background: repeating-linear-gradient(45deg, #fafafa, #fafafa 10px, #f0f0f0 10px, #f0f0f0 20px); display: grid; place-items: center; font: 600 13px system-ui, sans-serif; color: #999; letter-spacing: 2px; margin-bottom: 20px; }
+    aside h3 { font: 700 15px system-ui, sans-serif; margin: 0 0 8px; }
+    aside li { font-size: 15px; margin-bottom: 8px; }
+    .cookie { position: fixed; left: 0; right: 0; bottom: 0; background: #263238; color: #eceff1; font: 15px system-ui, sans-serif; padding: 18px 40px; display: flex; gap: 20px; align-items: center; z-index: 50; }
+    .cookie p { margin: 0; flex: 1; }
+    .cookie button { font: 600 14px system-ui, sans-serif; padding: 10px 18px; border: 0; border-radius: 4px; background: #ffca28; color: #222; }
+    .backdrop { position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 60; display: grid; place-items: center; }
+    .modal { width: 440px; background: #fff; border-radius: 10px; padding: 30px; font-family: system-ui, sans-serif; box-shadow: 0 20px 60px rgba(0,0,0,.3); }
+    .modal h2 { margin: 0 0 8px; font-size: 24px; }
+    .modal p { color: #555; font-size: 15px; }
+    .modal input { width: 100%; padding: 11px; font-size: 15px; border: 1px solid #ccc; border-radius: 6px; margin: 8px 0 12px; }
+    .modal button { width: 100%; padding: 12px; font: 600 15px system-ui; background: #1565c0; color: #fff; border: 0; border-radius: 6px; }
+    .chat { position: fixed; right: 24px; bottom: 96px; width: 300px; height: 190px; border: 0; border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,.25); z-index: 55; }
+  </style>
+</head>
+<body>
+  <header class="site">
+    <div class="logo">The Daily Example</div>
+    <nav><span>News</span><span>Local</span><span>Sports</span><span>Weather</span><span>Opinion</span></nav>
+  </header>
+
+  <div class="wrap">
+    <article>
+      <h1>Local park gets a new bench, residents cautiously optimistic</h1>
+      <div class="meta">By A. Writer · 4 min read</div>
+      <div class="hero"></div>
+      <p>After months of deliberation, the city council approved the installation of a single wooden bench near the duck pond. Supporters say it is a modest but meaningful step toward a more comfortable park experience.</p>
+      <p>“I have been standing here for eleven years,” said one regular visitor. “Sitting will be a welcome change.” Critics, however, worry that the bench faces the wrong direction and offers an uninterrupted view of the parking lot.</p>
+      <p>The council has promised to revisit the matter next spring, pending a feasibility study on a second bench.</p>
+    </article>
+    <aside>
+      <div class="ad" id="sidebar-ad">ADVERTISEMENT</div>
+      <h3>Most read</h3>
+      <ol>
+        <li>Weather expected to happen again tomorrow</li>
+        <li>Pigeon elected honorary mayor</li>
+        <li>Ten photos of clouds that look like other clouds</li>
+      </ol>
+    </aside>
+  </div>
+
+  <div class="backdrop" id="newsletter">
+    <div class="modal">
+      <h2>Don't miss a thing!</h2>
+      <p>Subscribe to our newsletter and get the news you already read, again, by email every morning.</p>
+      <input placeholder="you@example.com">
+      <button>Subscribe</button>
+    </div>
+  </div>
+
+  <iframe class="chat" src="chat.html" title="chat"></iframe>
+
+  <div class="cookie" id="cookie-banner">
+    <p>We use cookies to improve your experience, measure it, measure it again and share the measurements with 1,284 partners.</p>
+    <button>Accept all</button>
+  </div>
+</body>
+</html>

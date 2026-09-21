@@ -13,7 +13,8 @@
     "start:firefox": "node scripts/build.mjs && web-ext run --source-dir dist/firefox",
     "start:chrome": "node scripts/build.mjs && web-ext run --source-dir dist/chrome -t chromium",
     "package": "node scripts/build.mjs && web-ext build -s dist/chrome -a dist --filename skullclick-chrome-{version}.zip -o && web-ext build -s dist/firefox -a dist --filename skullclick-firefox-{version}.zip -o",
-    "test:e2e:edge": "node scripts/build.mjs --e2e && node test/e2e/run.mjs edge"
+    "test:e2e:edge": "node scripts/build.mjs --e2e && node test/e2e/run.mjs edge",
+    "screenshots": "node scripts/build.mjs --e2e && node scripts/screenshots.mjs && node scripts/demo-gif.mjs"
   },
   "devDependencies": {
     "jsdom": "^29.1.1",
