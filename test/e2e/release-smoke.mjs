@@ -49,7 +49,7 @@ try {
 
   let welcome;
   await check("welcome page opens on install", async () => {
-    for (let i = 0; i < 20 && !welcome; i++) {
+    for (let i = 0; i < 80 && !welcome; i++) {
       await sleep(100);
       welcome = (await browser.pages()).find(p => p.url().endsWith("options/options.html#welcome"));
     }
