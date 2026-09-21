@@ -54,7 +54,8 @@ try {
       welcome = (await browser.pages()).find(p => p.url().endsWith("options/options.html#welcome"));
     }
     assert.ok(welcome, "no welcome tab");
-    assert.equal(await welcome.evaluate(() => document.getElementById("welcome").hidden), false);
+    // options.js unhides the welcome block once it has run
+    await welcome.waitForFunction(() => document.getElementById("welcome")?.hidden === false, { timeout: 5000 });
     await welcome.close();
   });
 
