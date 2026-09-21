@@ -68,3 +68,22 @@ MIT: http://rhardih.mit-license.org
 **1.0**
 
 - Initial version
+
+## Support the project
+
+SkullClick is free, open source, and has no ads or tracking. If it saves you
+from annoying pop-ups, you can support its development:
+
+- **Boosty:** https://boosty.to/mikio_kuroki/donate
+- **USDT / TRX, TRON (TRC-20):** `TXUBW4e88SDTfrnJRKfbhYfFcggufbonc1`
+- **USDT / USDC / ETH, Ethereum or any EVM network (ERC-20):** `0x1378491169064702786b2E5b58c6375776177E8A`
+- **TON / USDT on TON:** `UQAhI7EKzoa-JuKOfv0ULMzA3FrmpxsDkXj8Qevwj2z1cMRN`
+
+Send only on the network listed next to each address. Starring the repository
+and reporting bugs also helps a lot.
+
+## Based on ekill by René Hansen
+
+SkullClick is a fork of [ekill](https://github.com/rhardih/ekill) by
+[René Hansen](https://github.com/rhardih), released under the MIT License.
+The original copyright notice is kept in [LICENSE](LICENSE).

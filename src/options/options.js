@@ -11,7 +11,12 @@
 
   // Replaced at build time from package.json ("homepage").
   const REPO_URL = "__REPO_URL__";
-  const SUPPORT_URL = REPO_URL + "#support-the-project";
+  const BOOSTY_URL = "https://boosty.to/mikio_kuroki/donate";
+  const WALLETS = [
+    { network: "TRON (TRC-20)", coins: "USDT, TRX", address: "TXUBW4e88SDTfrnJRKfbhYfFcggufbonc1" },
+    { network: "Ethereum / EVM (ERC-20)", coins: "USDT, USDC, ETH", address: "0x1378491169064702786b2E5b58c6375776177E8A" },
+    { network: "TON", coins: "TON, USDT", address: "UQAhI7EKzoa-JuKOfv0ULMzA3FrmpxsDkXj8Qevwj2z1cMRN" }
+  ];
 
   const $ = id => document.getElementById(id);
   const t = (key, subs) => api.i18n.getMessage(key, subs) || key;
@@ -229,6 +234,31 @@
     }
   }
 
+  /* --------------------------------------------------------- support -- */
+
+  function renderWallets() {
+    for (const w of WALLETS) {
+      const copy = el("button", {
+        type: "button",
+        class: "secondary",
+        text: t("copy"),
+        onclick: async () => {
+          try {
+            await navigator.clipboard.writeText(w.address);
+            copy.textContent = t("copied");
+          } catch (e) {
+            window.getSelection().selectAllChildren(code);
+          }
+          setTimeout(() => { copy.textContent = t("copy"); }, 2000);
+        }
+      });
+      const code = el("code", { text: w.address });
+      $("wallets").append(el("div", { class: "wallet" },
+        el("div", {}, el("strong", { text: w.network }), " ", el("span", { class: "muted", text: w.coins })),
+        code, copy));
+    }
+  }
+
   /* ------------------------------------------------------------ init -- */
 
   function init() {
@@ -236,9 +266,9 @@
     $("version").textContent = "v" + api.runtime.getManifest().version;
     $("welcome").hidden = location.hash !== "#welcome";
 
-    for (const [id, url] of [["support-link", SUPPORT_URL], ["support-footer-link", SUPPORT_URL], ["repo-link", REPO_URL]]) {
-      $(id).href = url;
-    }
+    $("repo-link").href = REPO_URL;
+    $("boosty-link").href = BOOSTY_URL;
+    renderWallets();
 
     $("grudge-toggle").addEventListener("change", onGrudgeToggle);
     $("grant-button").addEventListener("click", onGrant);

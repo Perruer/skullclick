@@ -163,5 +163,23 @@
   },
   "supportFooter": {
     "message": "Поддержать проект"
+  },
+  "supportTitle": {
+    "message": "Поддержать SkullClick"
+  },
+  "supportText": {
+    "message": "SkullClick бесплатный, с открытым кодом, без рекламы и слежки. Если он избавляет вас от надоедливых окон — можно поддержать разработку."
+  },
+  "supportBoosty": {
+    "message": "Поддержать на Boosty"
+  },
+  "supportNetworkNote": {
+    "message": "Отправляйте только в сети, указанной у адреса."
+  },
+  "copy": {
+    "message": "Копировать"
+  },
+  "copied": {
+    "message": "Скопировано!"
   }
 }

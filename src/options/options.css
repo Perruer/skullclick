@@ -234,6 +234,40 @@ input[type=search] {
 
 .warning[hidden] { display: none; }
 
+.support { border-style: dashed; }
+
+a.button {
+  display: inline-block;
+  padding: 7px 16px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+a.button:hover { background: var(--accent-hover); }
+
+.wallet {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 12px;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid var(--border);
+}
+
+.wallet > div { grid-column: 1 / -1; font-size: 14px; }
+
+.wallet code {
+  font: 13px/1.4 ui-monospace, SFMono-Regular, Consolas, monospace;
+  word-break: break-all;
+  user-select: all;
+}
+
+.wallet button { padding: 3px 12px; font-size: 13px; }
+
 /* Hit list */
 details.site {
   border: 1px solid var(--border);

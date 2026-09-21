@@ -326,8 +326,14 @@ async function run(kind) {
     });
 
     await step("options page is localized and has the support link", async () => {
-      const href = await ctx.extPage.evaluate(() => { const e = document.querySelector("#support-link"); return e.href; });
-      assert.match(href, /#support-the-project$/);
+      const info = await ctx.extPage.evaluate(() => ({
+        boosty: document.querySelector("#boosty-link").href,
+        wallets: [...document.querySelectorAll(".wallet code")].map(e => e.textContent),
+        repo: document.querySelector("#repo-link").href
+      }));
+      assert.equal(info.boosty, "https://boosty.to/mikio_kuroki/donate");
+      assert.equal(info.wallets.length, 3);
+      assert.equal(info.repo, "https://github.com/Perruer/skullclick");
       assert.ok(await ctx.extPage.evaluate(() => { const e = document.querySelector("footer"); return e.textContent.includes("René Hansen"); }));
     });
 

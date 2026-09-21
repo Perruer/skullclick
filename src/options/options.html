@@ -14,7 +14,7 @@
       <h1>SkullClick</h1>
       <span class="muted" id="version"></span>
     </div>
-    <a class="support-link" id="support-link" target="_blank" rel="noopener" data-i18n="supportLink">Support</a>
+    <a class="support-link" href="#support" data-i18n="supportLink">Support</a>
   </header>
 
   <main>
@@ -82,12 +82,19 @@
       </div>
       <p class="status" id="status" role="status"></p>
     </section>
+    <section class="card support" id="support">
+      <h2 data-i18n="supportTitle">Support SkullClick</h2>
+      <p data-i18n="supportText">SkullClick is free, open source and has no ads or tracking. If it saves you from annoying pop-ups, you can support its development.</p>
+      <p><a class="button" id="boosty-link" target="_blank" rel="noopener" data-i18n="supportBoosty">Donate on Boosty</a></p>
+      <div id="wallets"></div>
+      <p class="muted" data-i18n="supportNetworkNote">Send only on the network shown next to the address.</p>
+    </section>
   </main>
 
   <footer>
     <span data-i18n="basedOn">Based on ekill by René Hansen.</span>
     <a id="repo-link" target="_blank" rel="noopener">GitHub</a> ·
-    <a id="support-footer-link" target="_blank" rel="noopener" data-i18n="supportFooter">Support the project</a>
+    <a href="#support" data-i18n="supportFooter">Support the project</a>
   </footer>
 
   <script src="../lib/rules.js"></script>

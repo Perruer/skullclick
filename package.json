@@ -20,9 +20,26 @@
     "puppeteer": "^24.43.1",
     "web-ext": "^10.7.0"
   },
-  "homepage": "https://github.com/GITHUB_USER/skullclick",
+  "homepage": "https://github.com/Perruer/skullclick",
   "repository": {
     "type": "git",
-    "url": "https://github.com/GITHUB_USER/skullclick.git"
-  }
+    "url": "https://github.com/Perruer/skullclick.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Perruer/skullclick/issues"
+  },
+  "author": "Perruer",
+  "contributors": [
+    "René Hansen (original ekill, https://github.com/rhardih/ekill)"
+  ],
+  "funding": [
+    {
+      "type": "individual",
+      "url": "https://boosty.to/mikio_kuroki/donate"
+    },
+    {
+      "type": "individual",
+      "url": "https://github.com/Perruer/skullclick#support-the-project"
+    }
+  ]
 }

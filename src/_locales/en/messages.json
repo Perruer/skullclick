@@ -163,5 +163,23 @@
   },
   "supportFooter": {
     "message": "Support the project"
+  },
+  "supportTitle": {
+    "message": "Support SkullClick"
+  },
+  "supportText": {
+    "message": "SkullClick is free, open source and has no ads or tracking. If it saves you from annoying pop-ups, you can support its development."
+  },
+  "supportBoosty": {
+    "message": "Donate on Boosty"
+  },
+  "supportNetworkNote": {
+    "message": "Send only on the network shown next to the address."
+  },
+  "copy": {
+    "message": "Copy"
+  },
+  "copied": {
+    "message": "Copied!"
   }
 }
