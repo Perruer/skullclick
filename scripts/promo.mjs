@@ -1,4 +1,4 @@
-// Renders Edge Add-ons promotional tiles into store/.
+// Renders promotional tiles (440×280, 1400×560) into store/.
 //   node scripts/promo.mjs
 import { readFile, mkdir } from "node:fs/promises";
 import puppeteer from "puppeteer";

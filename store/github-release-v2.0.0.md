@@ -15,7 +15,7 @@ Body below the line.
 ## Install
 
 - **Firefox:** [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/skullclick/)
-- **Microsoft Edge:** Edge Add-ons (link will be added after the listing is approved)
+- **Microsoft Edge:** the same steps as for Chrome below, at `edge://extensions`
 - **Chrome, Brave, Vivaldi, Opera:** download **`skullclick-chrome-2.0.0.zip`** below, then:
   1. Unzip it into a folder you will keep.
   2. Open `chrome://extensions` and turn on **Developer mode** (top-right).

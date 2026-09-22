@@ -43,7 +43,7 @@
 | Browser | How |
 |---|---|
 | **Firefox** | [Firefox Add-ons (AMO)](https://addons.mozilla.org/firefox/addon/skullclick/) |
-| **Microsoft Edge** | Microsoft Edge Add-ons — link will appear here once the listing is approved |
+| **Microsoft Edge** | Manual install from [GitHub Releases](https://github.com/Perruer/skullclick/releases), the same steps as for Chrome at `edge://extensions` |
 | **Chrome, Brave, Vivaldi, Opera** and other Chromium browsers | Manual install from [GitHub Releases](https://github.com/Perruer/skullclick/releases), see below |
 
 ### Chrome: manual install from GitHub Releases
@@ -189,7 +189,7 @@ kept in [LICENSE](LICENSE).
 ### Установка
 
 - **Firefox:** [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/skullclick/)
-- **Microsoft Edge:** Microsoft Edge Add-ons, ссылка появится после публикации
+- **Microsoft Edge:** вручную из GitHub Releases, так же, как в Chrome, только на странице `edge://extensions`
 - **Chrome** и другие браузеры на Chromium (Brave, Vivaldi, Opera), вручную:
   1. Скачайте **`skullclick-chrome-<версия>.zip`** со страницы
      [последнего релиза](https://github.com/Perruer/skullclick/releases/latest).
